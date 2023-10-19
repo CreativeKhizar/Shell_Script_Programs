@@ -38,7 +38,7 @@ do
 
     if [ $? -eq 0 ]
     then
-        echo -e "$Y $1 Already Installed $N"
+        echo -e "$Y $i Already Installed $N"
     else
         yum install $i -y &>> $LOGFILE
         VALIDATE $? $i
