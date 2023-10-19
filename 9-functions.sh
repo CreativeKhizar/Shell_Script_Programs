@@ -25,10 +25,10 @@ yum install mysql -y &>> $LOGFILE
 
 VALIDATE $? "Mysql"
 
-yum install postifx -y &>> $LOGFILE
+yum install postfix -y &>> $LOGFILE
 
 VALIDATE $? "Postfix"
 
-yum install gmailx -y &>> $LOGFILE
+yum install git -y &>> $LOGFILE
 
 VALIDATE $? "gmailx"
