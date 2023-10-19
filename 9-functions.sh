@@ -18,7 +18,7 @@ VALIDATE()
         echo -e "$R $2 Installation Failed ...$N"
     else
         echo -e "$G $2 Installation Success ...$N"
-        
+    fi    
 }
 
 yum install mysql -y &>> $LOGFILE
