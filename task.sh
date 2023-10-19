@@ -29,6 +29,11 @@ echo $@
 
 for i in $@
 do
+    echo $i
+done
+
+for i in $@
+do
     yum list $i &>> $LOGFILE
 
     if [ $? -eq 0 ]
