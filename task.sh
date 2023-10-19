@@ -28,7 +28,7 @@ fi
 
 for i in $@
 do
-    yum list $i &>> $LOGFILE
+    yum list installed $i &>> $LOGFILE
 
     if [ $? -eq 0 ]
     then
