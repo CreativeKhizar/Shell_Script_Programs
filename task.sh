@@ -13,9 +13,9 @@ LOGFILE=/tmp/$ScriptName-$DATE.log
 VALIDATE()
 {
     if [ $1 -ne 0 ]; then
-        echo "$R $2 Installation Failed$N"
+        echo -e "$R $2 Installation Failed$N"
     else
-        echo "$G $2 Installation Success$N"
+        echo -e "$G $2 Installation Success$N"
     fi
 }
 
@@ -32,9 +32,9 @@ do
 
     if [ $? -eq 0 ]
     then
-        echo "$Y $1 Already Installed $N"
+        echo -e "$Y $1 Already Installed $N"
     else
         yum install $i -y &>> $LOGFILE
-        VALIDATE $? "$i"
+        VALIDATE $? $i
     fi
 done
