@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 USERID=$(id -u)
-DATE=date +%F
+DATE=$(date +%F)
 ScriptName=$0
 LOGFILE=/tmp/$ScriptName-$DATE.log
 
@@ -36,4 +36,5 @@ do
     else
         yum install $i -y &>> $LOGFILE
         VALIDATE $? "$i"
+    fi
 done
