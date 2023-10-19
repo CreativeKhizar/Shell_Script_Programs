@@ -31,4 +31,4 @@ VALIDATE $? "Postfix"
 
 yum install git -y &>> $LOGFILE
 
-VALIDATE $? "gmailx"
+VALIDATE $? "git"
