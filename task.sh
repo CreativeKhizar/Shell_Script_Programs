@@ -25,6 +25,7 @@ then
     exit 1
 fi
 
+echo $@
 
 for i in $@
 do
