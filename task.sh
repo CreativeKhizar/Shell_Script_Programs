@@ -25,12 +25,6 @@ then
     exit 1
 fi
 
-echo $@
-
-for i in $@
-do
-    echo $i
-done
 
 for i in $@
 do
