@@ -10,12 +10,6 @@ read -p "Enter the word to replace : " oldword
 
 read -p "Enter the word the word to replace : " newword
 
-echo $oldword
-
-echo $newword
-
-echo "sed 's/$oldword/$newword/g' $file"
-
 echo "Original Content"
 
 cat $file
