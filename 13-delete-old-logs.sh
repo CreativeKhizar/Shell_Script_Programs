@@ -16,6 +16,7 @@ echo "Script started executing at $DATE"
 
 while read line
 do
+    echo $line
     echo "Deleting $line " &>> $LOGFILE
     rm -rf $line
 done <<< $FILES_TO_DELETE
