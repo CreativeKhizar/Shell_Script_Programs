@@ -20,4 +20,4 @@ do
     echo $line
     echo "Deleting $line " &>> $LOGFILE
     rm -rf $line
-done <<< echo $FILES_TO_DELETE
+done < echo $FILES_TO_DELETE
