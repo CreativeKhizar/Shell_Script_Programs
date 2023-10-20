@@ -21,7 +21,7 @@ VALIDATE()
 
 if [ $USERID -ne 0 ]
 then
-    echo "Error: Please Run the Script with root Access"
+    echo "$R Error: Please Run the Script with root Access$N"
     exit 1
 fi
 
