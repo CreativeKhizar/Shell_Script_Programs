@@ -1,10 +1,10 @@
 #! /bin/bash
 
-APP_LOGS_DIR=/home/centos/app-logs
+APP_LOGS_DIR="/home/centos/app-logs"
 
 DATE=$(date +%F:%H:%M:%S)
 
-LOGDIR=/home/centos/Shell-Script-logs
+LOGDIR="/home/centos/Shell-Script-logs"
 
 ScriptName=$0
 
